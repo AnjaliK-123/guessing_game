@@ -1,3 +1,12 @@
+// i/o module
+use std::io;
+// main function
 fn main() {
-    println!("Hello, world!");
+    // prompts the user
+    println!("Guess the number");
+    // takes input from user
+    println!("Enter your number:");
+    let mut guess = String::new();
+    io::stdin().readline(&mut guess).expect("Failed to read line");
+    println!("You guessed: {}", guess);
 }
