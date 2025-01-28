@@ -7,6 +7,6 @@ fn main() {
     // takes input from user
     println!("Enter your number:");
     let mut guess = String::new();
-    io::stdin().readline(&mut guess).expect("Failed to read line");
+    io::stdin().read_line(&mut guess).expect("Failed to read line");
     println!("You guessed: {}", guess);
 }
